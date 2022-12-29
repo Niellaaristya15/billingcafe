@@ -4,12 +4,16 @@
  */
 package bilingc;
 
+
 /**
  *
  * @author hurryzyn
- */
-public class hal1 extends javax.swing.JFrame {
+ */import javax.swing.JOptionPane;
 
+
+public class hal1 extends javax.swing.JFrame {
+    String Member = "lala";
+    String Password ="123456";
     /**
      * Creates new form hal1
      */
@@ -26,23 +30,166 @@ public class hal1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        hal111 = new bilingc.hal11();
+        jPanel1 = new javax.swing.JPanel();
+        warna1 = new component.warna();
+        logo1 = new javax.swing.JLabel();
+        hello = new javax.swing.JLabel();
+        IDmember = new javax.swing.JLabel();
+        txtmember = new javax.swing.JTextField();
+        txtpw = new javax.swing.JPasswordField();
+        password = new javax.swing.JLabel();
+        daftarmember = new javax.swing.JLabel();
+        login1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        logo1.setFont(new java.awt.Font("Lucida Fax", 0, 24)); // NOI18N
+        logo1.setForeground(new java.awt.Color(255, 255, 255));
+        logo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        logo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bilingc/icons8-internet-64 (1).png"))); // NOI18N
+        logo1.setText("Javanase Internet Cafe!");
+        logo1.setToolTipText("");
+        logo1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+
+        hello.setFont(new java.awt.Font("Humanst521 Lt BT", 0, 24)); // NOI18N
+        hello.setForeground(new java.awt.Color(255, 255, 255));
+        hello.setText("Welcome, Javanase Internet Cafe!");
+
+        IDmember.setFont(new java.awt.Font("Humanst521 Lt BT", 0, 20)); // NOI18N
+        IDmember.setForeground(new java.awt.Color(255, 255, 255));
+        IDmember.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        IDmember.setText("ID Member");
+
+        txtmember.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtmemberActionPerformed(evt);
+            }
+        });
+
+        txtpw.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtpwActionPerformed(evt);
+            }
+        });
+
+        password.setFont(new java.awt.Font("Humanst521 Lt BT", 0, 20)); // NOI18N
+        password.setForeground(new java.awt.Color(255, 255, 255));
+        password.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        password.setText("Password");
+
+        daftarmember.setFont(new java.awt.Font("Humanst521 Lt BT", 0, 15)); // NOI18N
+        daftarmember.setText("(doesn't have member? Sign up here)");
+
+        login1.setFont(new java.awt.Font("Humanst521 Lt BT", 0, 15)); // NOI18N
+        login1.setText("LOGIN");
+        login1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                login1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout warna1Layout = new javax.swing.GroupLayout(warna1);
+        warna1.setLayout(warna1Layout);
+        warna1Layout.setHorizontalGroup(
+            warna1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(warna1Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(warna1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(IDmember)
+                    .addComponent(password))
+                .addGap(79, 79, 79)
+                .addGroup(warna1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtpw)
+                    .addComponent(txtmember))
+                .addGap(68, 68, 68))
+            .addGroup(warna1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(warna1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(logo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(warna1Layout.createSequentialGroup()
+                        .addGroup(warna1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(hello)
+                            .addGroup(warna1Layout.createSequentialGroup()
+                                .addComponent(daftarmember)
+                                .addGap(18, 18, 18)
+                                .addComponent(login1)))
+                        .addGap(0, 11, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        warna1Layout.setVerticalGroup(
+            warna1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(warna1Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(logo1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(hello)
+                .addGap(43, 43, 43)
+                .addGroup(warna1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(IDmember)
+                    .addComponent(txtmember, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
+                .addGroup(warna1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtpw)
+                    .addComponent(password, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE))
+                .addGap(45, 45, 45)
+                .addGroup(warna1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(login1)
+                    .addComponent(daftarmember))
+                .addGap(5, 5, 5))
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(warna1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(warna1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 6, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(hal111, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(hal111, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtmemberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtmemberActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtmemberActionPerformed
+
+    private void txtpwActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtpwActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtpwActionPerformed
+
+    private void login1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login1ActionPerformed
+        // TODO add your handling code here:
+        String _member = txtmember.getText();
+        String _password = new String(txtpw.getPassword());
+
+        if(Member.equals(_member) &&  Password.equals(_password)){
+            hal2 hv = new hal2 ();
+            hv.setLocationRelativeTo(null);
+            hv.setVisible(true);
+            this.setVisible(false);
+        }   else {
+            JOptionPane.showMessageDialog(null, "Ussername atau Password tidak sesuai", "Message", JOptionPane.ERROR_MESSAGE);
+            txtmember.setText("");
+            txtpw.setText("");
+        }
+
+    }//GEN-LAST:event_login1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,6 +227,15 @@ public class hal1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private bilingc.hal11 hal111;
+    private javax.swing.JLabel IDmember;
+    private javax.swing.JLabel daftarmember;
+    private javax.swing.JLabel hello;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton login1;
+    private javax.swing.JLabel logo1;
+    private javax.swing.JLabel password;
+    private javax.swing.JTextField txtmember;
+    private javax.swing.JPasswordField txtpw;
+    private component.warna warna1;
     // End of variables declaration//GEN-END:variables
 }

@@ -149,7 +149,7 @@ public class hal3 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-    switch(comboBox.getSelectedIndex()){
+    switch (comboBox.getSelectedIndex()){
             case 0:
                 textField.setText("Computer 1");
                 break;
